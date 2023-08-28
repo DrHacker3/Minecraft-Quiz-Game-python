@@ -1,3 +1,8 @@
+#Title: Minecraft Quiz
+#Description: A quiz about Minecraft
+#Author: Sean Aitken
+#Date created: 2021-09-20
+
 import time
 score = 0
 
@@ -12,6 +17,7 @@ time.sleep(1) # Wait for 1 second
 print ("Good luck!")
 time.sleep(1) # Wait for 1 second
 print ("-"*40)
+
 
 # Ask first question
 question = "What is the final boss in minecraft?"
@@ -33,6 +39,7 @@ else:
     
 time.sleep(2) # Wait for 2 seconds
 
+
 # Ask a question
 question = "How many wood planks are needed to make a crafting table?"
 print(question)
@@ -52,6 +59,7 @@ else:
     print("Incorrect!")
 
 time.sleep(2) # Wait for 2 seconds
+
 
 # Ask a question
 question = "What food gives the most hunger points?"
@@ -73,6 +81,7 @@ else:
     print("Incorrect!")
     
 time.sleep(2) # Wait for 2 seconds
+
 
 # Ask a question
 question = "What is the rarest inget to get in minecraft?"
@@ -100,5 +109,6 @@ elif player_answer.lower() == "netherite ingot":
 else:
     print("Incorrect!")
 
+time.sleep(1) # Wait for 1 second
 # Display the current score
-print("Your score: ", score)
+print("Your score: ", score, "/ 40")
