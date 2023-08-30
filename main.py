@@ -167,7 +167,7 @@ elif player_answer.lower() == "netherite":
 elif player_answer.lower() == "netherite armor":
     print("Correct!")
     score += 10
-elif player_answer.lower() == "diamond armor":
+elif player_answer.lower() == "diamond armor" or "1":
     print("It used too be diamond armor until netherite was added in 1.16")
 else:
     print("Incorrect!")
