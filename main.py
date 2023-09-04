@@ -221,8 +221,101 @@ elif player_answer.lower() == "creeper":
 else:
     print("Incorrect!")
     print("Correct answer: Creeper Aw man")
+    
+time.sleep(2) # Wait for 2 seconds
+
+
+# Ask a question
+question = "How many Iron ingots are needed to make an Iron Golem?"
+print(question)
+
+# Get the player's answer
+player_answer = input("Your answer: ")
+
+# Check if the answer is correct
+correct_answer = "36"
+if player_answer.lower() == correct_answer:
+    print("Correct!")
+    score += 10
+else:
+    print("Incorrect!")
+    print("Correct answer: 36 Iron ingots")
+
+time.sleep(2) # Wait for 2 seconds
+
+
+# Ask a question
+question = "When was minecraft first fully released?"
+
+# Get the player's answer
+player_answer = input("Your answer: ")
+
+# Check if the answer is correct
+correct_answer = "2011"
+if player_answer.lower() == correct_answer:
+    print("Correct!")
+    score += 10
+elif player_answer.lower() == "november 2011" or "18 november 2011":
+    print("Correct!")
+    score += 10
+else:
+    print("Incorrect!")
+    print("Correct answer: 2011")
+
+time.sleep(2) # Wait for 2 seconds
+
+
+# Ask a question
+question = "What was Minecraft originally called?"
+
+# Get the player's answer
+player_answer = input("Your answer: ")
+
+# Check if the answer is correct
+correct_answer = "cave game"
+if player_answer.lower() == correct_answer:
+    print("Correct!")
+    score += 10
+elif player_answer.lower() == "cavegame":
+    print("Correct!")
+    score += 10
+else:
+    print("Incorrect!")
+    print("Correct answer: Cave Game")
+
+time.sleep(2) # Wait for 2 seconds
+
+
+# Ask a question
+question = "What was the first mob added to minecraft?"
+print(question)
+
+print("1. Creeper")
+print("2. Zombie")
+print("3. Pig")
+print("4. Cow")
+
+# Get the player's answer
+player_answer = input("Your answer: ")
+
+# Check if the answer is correct
+correct_answer = "3"
+if player_answer.lower() == correct_answer:
+    print("Correct!")
+    score += 10
+elif player_answer.lower() == "pig":
+    print("Correct!")
+    score += 10
+else:
+    print("Incorrect!")
+    print("Correct answer: Pig")
+    print("This was a tricky one as it is hard to decide if it was the pig or the creeper that was added first. Internet says it was the pig so I will go with that. It could also be the dancing steve though...")
+
+
 
 time.sleep(1) # Wait for 1 second
 
 # Display the current score
-print("Your score: ", score, "/ 80")
+percent = score / 120 * 100
+print("Your score: ", score, "/ 120")
+print("Your percentage: ", percent, "%")
