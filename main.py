@@ -4,6 +4,7 @@
 #Date created: 2021-09-20
 
 import time
+import os
 
 def main():
     score = 0
@@ -337,6 +338,8 @@ def main():
             print("-"*40)
             main()
         else:
+            os.system("pause")
             exit()
-    
+    else:
+        os.system("pause")
 main()
